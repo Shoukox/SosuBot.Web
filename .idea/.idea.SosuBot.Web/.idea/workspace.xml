@@ -15,7 +15,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64756719-2b90-46b8-845f-9e11c032dcde" name="Changes" comment="" />
+    <list default="true" id="64756719-2b90-46b8-845f-9e11c032dcde" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SosuBot.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SosuBot.Web/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/Constants/FilePathConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/Constants/FilePathConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/Controllers/FileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/Controllers/FileController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/bin/Debug/net8.0/SosuBot.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/bin/Debug/net8.0/SosuBot.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/bin/Debug/net8.0/SosuBot.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/bin/Debug/net8.0/SosuBot.Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/ref/SosuBot.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/ref/SosuBot.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/refint/SosuBot.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/refint/SosuBot.Web.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +38,21 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Shoukox"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Shoukox/SosuBot.Web.git",
+    "accountId": "9d7ee4bf-3c4e-478d-9b64-222723bd4ddd"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4363be3555734c96804bc429c863e56ab2e200/9a/5bb50d06/CastHelpers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4363be3555734c96804bc429c863e56ab2e200/f5/ba8e05e9/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -32,6 +61,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97489bf408494bfb89bfd7e95c7ebf9d30400/15/26aac66e/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a61cc9644f754bb1b5e5474d1bf778c076400/60/29dcae77/DefaultHubDispatcher`1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -43,20 +73,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.SosuBot.Web1: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.SosuBot.Web.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.SosuBot.Web1: https.executor": "Run",
+    ".NET Project.SosuBot.Web.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.SosuBot.Web">
     <configuration name="BlazorApp1.Client" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -306,13 +338,14 @@
       <updated>1754166965379</updated>
       <workItem from="1754166966420" duration="7912000" />
       <workItem from="1754177378822" duration="11109000" />
-      <workItem from="1754197187891" duration="1926000" />
+      <workItem from="1754197187891" duration="7754000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

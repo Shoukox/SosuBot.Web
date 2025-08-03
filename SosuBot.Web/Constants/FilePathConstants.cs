@@ -2,6 +2,8 @@ namespace SosuBot.Web.Constants;
 
 public static class FilePathConstants
 {
-    public const string VideoPath = "/home/shoukko/danser/videos/";
-    public const string ReplaysPath = "/home/shoukko/danser/replays/";
+    public static readonly string VideoPath =
+        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "danser", "videos");
+    public static readonly string ReplaysPath =
+        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "danser", "replays");
 }

@@ -44,3 +44,4 @@
 /home/shoukko/RiderProjects/SosuBot.Web/SosuBot.Web/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
 /home/shoukko/RiderProjects/SosuBot.Web/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.csproj.CopyComplete
 /home/shoukko/RiderProjects/SosuBot.Web/SosuBot.Web/bin/Debug/net8.0/RabbitMQ.Client.dll
+/home/shoukko/RiderProjects/SosuBot.Web/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.sourcelink.json

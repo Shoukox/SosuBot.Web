@@ -15,7 +15,7 @@ public class FileController (
     [Route("/upload-video")]
     public async Task<IActionResult> PostVideo(IFormFile file, string message)
     {
-        if (file == null || file.Length == 0)
+        if (file.Length == 0)
             return BadRequest("No file provided or file is empty");
 
         if (!file.ContentType.StartsWith("video/"))
