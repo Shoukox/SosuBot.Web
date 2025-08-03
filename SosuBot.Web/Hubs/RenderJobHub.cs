@@ -9,18 +9,16 @@ public sealed class RenderJobHub(
 {
     public override async Task OnConnectedAsync()
     {
-        logger.LogInformation($"ConnectionId: {Context.ConnectionId}\n");
+        rabbitMqService.AddConnectionId(Context.ConnectionId);
         await this.Clients.All.SendAsync("ReceiveMessage", $"Client renderer {this.Context.ConnectionId} has joined.");
         await this.Clients.All.SendAsync("ReceiveMessage", $"There are {rabbitMqService.GetConnectionIdsCount()} renderers now");
-        rabbitMqService.AddConnectionId(Context.ConnectionId);
     }
 
     public override async Task OnDisconnectedAsync(Exception? exception)
     {
-        logger.LogInformation($"ConnectionId: {Context.ConnectionId}\n");
+        rabbitMqService.RemoveConnectionId(Context.ConnectionId);
         await this.Clients.All.SendAsync("ReceiveMessage", $"Client renderer {this.Context.ConnectionId} has disconnected.");
         await this.Clients.All.SendAsync("ReceiveMessage", $"There are {rabbitMqService.GetConnectionIdsCount()} renderers now");
-        rabbitMqService.RemoveConnectionId(Context.ConnectionId);
     }
 
     public async Task RenderError(string message)
