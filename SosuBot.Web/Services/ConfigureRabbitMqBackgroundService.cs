@@ -27,7 +27,15 @@ public sealed class ConfigureRabbitMqBackgroundService(
             catch (Exception ex)
             {
                 logger.LogError(ex, "RabbitMQ connection failed. Retrying...");
+            }
+
+            try
+            {
                 await Task.Delay(1000, cancellationToken);
+            }
+            catch (OperationCanceledException ex)
+            {
+                logger.LogError(ex, "RabbitMQ connection cancelled");
             }
         }
     }
