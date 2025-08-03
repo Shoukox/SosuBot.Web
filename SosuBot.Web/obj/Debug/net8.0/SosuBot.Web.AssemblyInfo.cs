@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SosuBot.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+314508df1c7e2c87acfef80793bf38fca0cc92ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba8cc93adf836dcf86bae56675281e681be037a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SosuBot.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SosuBot.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
