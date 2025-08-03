@@ -24,6 +24,11 @@ public sealed class ConfigureRabbitMqBackgroundService(
             {
                 await SetupRabbitMqConnection(cancellationToken);
             }
+            catch (OperationCanceledException)
+            {
+                logger.LogInformation("Task was cancelled.");
+                return;
+            }
             catch (Exception ex)
             {
                 logger.LogError(ex, "RabbitMQ connection failed. Retrying...");
@@ -33,9 +38,9 @@ public sealed class ConfigureRabbitMqBackgroundService(
             {
                 await Task.Delay(1000, cancellationToken);
             }
-            catch (OperationCanceledException ex)
+            catch (OperationCanceledException)
             {
-                logger.LogError(ex, "RabbitMQ connection cancelled");
+                logger.LogInformation("Task was cancelled.");
             }
         }
     }
@@ -50,8 +55,8 @@ public sealed class ConfigureRabbitMqBackgroundService(
         string queueName = "render-job-queue";
         await channel.QueueDeclareAsync(queue: queueName, durable: true, exclusive: false,
             autoDelete: false, arguments: null, cancellationToken: stoppingToken);
-
-        await channel.BasicQosAsync(prefetchSize: 0, prefetchCount: 1, global: false, cancellationToken: stoppingToken);
+        
+        await channel.BasicQosAsync(prefetchSize: 0, prefetchCount: 0, global: false, cancellationToken: stoppingToken);
 
         var consumer = new AsyncEventingBasicConsumer(channel);
         consumer.ReceivedAsync += async (model, ea) => await rabbitMQService.SendRenderRequestAsync(model, ea);

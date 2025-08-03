@@ -96,6 +96,11 @@ public class RabbitMqService(
         }
     }
 
+    public bool JobMessageExists(string message)
+    {
+        return GetPendingRenderJobs().Any(m => m.ReplayFileName == message);
+    }
+
     public void SetChannel(IChannel channel)
     {
         _channel = channel;

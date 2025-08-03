@@ -25,6 +25,12 @@ public class FileController (
         if (string.IsNullOrEmpty(fileName))
             return BadRequest("Invalid filename");
 
+        if (!rabbitMqService.JobMessageExists(message))
+        {
+            logger.LogWarning($"Someone tried to access the api with the message {message}");
+            return Forbid();
+        }
+
         var savePath = Path.Combine(FilePathConstants.VideoPath, message[..^4] + ".mp4");
 
         try
