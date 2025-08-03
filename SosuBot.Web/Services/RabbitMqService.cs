@@ -41,7 +41,7 @@ public class RabbitMqService(
         }
 
         Console.WriteLine("[x] Done");
-        await _channel.BasicAckAsync(deliveryTag: renderJob.RabbitMQDeliveryTag, multiple: false);
+        //await _channel.BasicAckAsync(deliveryTag: renderJob.RabbitMQDeliveryTag, multiple: false);
         RemovePendingRenderJob(renderJob);
     }
 
@@ -64,14 +64,14 @@ public class RabbitMqService(
             return;
         }
 
-        await _channel.BasicNackAsync(renderJob.RabbitMQDeliveryTag, multiple: false, requeue: true);
+        //await _channel.BasicNackAsync(renderJob.RabbitMQDeliveryTag, multiple: false, requeue: true);
     }
 
     public async Task SendRenderRequestAsync(object model, BasicDeliverEventArgs ea)
     {
         if (GetConnectionIdsCount() == 0)
         {
-            await _channel.BasicNackAsync(ea.DeliveryTag, multiple: false, requeue: true);
+            //await _channel.BasicNackAsync(ea.DeliveryTag, multiple: false, requeue: true);
             return;
         }
 
@@ -83,7 +83,6 @@ public class RabbitMqService(
 
             AddPendingRenderJob(new RenderJob(ea.DeliveryTag, message));
 
-
             int index = Interlocked.Increment(ref _nextClient) % GetConnectionIdsCount();
             string connectionId = GetConnectionId(index);
 
@@ -91,8 +90,8 @@ public class RabbitMqService(
         }
         catch (Exception ex)
         {
-            logger.LogError(ex, "Handling failed. Requeueing...");
-            await _channel.BasicNackAsync(ea.DeliveryTag, multiple: false, requeue: true);
+            logger.LogError(ex, "Handling failed");
+            //await _channel.BasicNackAsync(ea.DeliveryTag, multiple: false, requeue: true);
         }
     }
 

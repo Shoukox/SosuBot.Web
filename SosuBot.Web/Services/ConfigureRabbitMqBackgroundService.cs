@@ -59,9 +59,12 @@ public sealed class ConfigureRabbitMqBackgroundService(
         await channel.BasicQosAsync(prefetchSize: 0, prefetchCount: 0, global: false, cancellationToken: stoppingToken);
 
         var consumer = new AsyncEventingBasicConsumer(channel);
-        consumer.ReceivedAsync += async (model, ea) => await rabbitMQService.SendRenderRequestAsync(model, ea);
-
-        await channel.BasicConsumeAsync(queueName, autoAck: false, consumer: consumer, cancellationToken: stoppingToken);
+        consumer.ReceivedAsync += async (model, ea) =>
+        {
+            await rabbitMQService.SendRenderRequestAsync(model, ea);
+        };
+        
+        await channel.BasicConsumeAsync(queueName, autoAck: true, consumer: consumer, cancellationToken: stoppingToken);
         await Task.Delay(Timeout.Infinite, stoppingToken);
     }
 }

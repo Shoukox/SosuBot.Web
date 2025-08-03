@@ -17,20 +17,8 @@
   <component name="ChangeListManager">
     <list default="true" id="64756719-2b90-46b8-845f-9e11c032dcde" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SosuBot.Web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SosuBot.Web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/Controllers/FileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/Controllers/FileController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SosuBot.Web/Services/ConfigureRabbitMqBackgroundService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/Services/ConfigureRabbitMqBackgroundService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SosuBot.Web/Services/RabbitMqService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/Services/RabbitMqService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/bin/Debug/net8.0/SosuBot.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/bin/Debug/net8.0/SosuBot.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/bin/Debug/net8.0/SosuBot.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/bin/Debug/net8.0/SosuBot.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/bin/Debug/net8.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/SosuBot.Web.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/ref/SosuBot.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/ref/SosuBot.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/refint/SosuBot.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SosuBot.Web/obj/Debug/net8.0/refint/SosuBot.Web.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +328,7 @@
       <updated>1754166965379</updated>
       <workItem from="1754166966420" duration="7912000" />
       <workItem from="1754177378822" duration="11109000" />
-      <workItem from="1754197187891" duration="15438000" />
+      <workItem from="1754197187891" duration="17388000" />
     </task>
     <servers />
   </component>
