@@ -5,11 +5,19 @@ using SosuBot.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.Limits.MaxRequestBodySize = 1_073_741_824; // 1 GB
+    options.Limits.KeepAliveTimeout = TimeSpan.FromMinutes(30);
+    options.Limits.RequestHeadersTimeout = TimeSpan.FromMinutes(30);
+});
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSignalR();
 builder.Services.AddHostedService<ConfigureRabbitMqBackgroundService>();
 builder.Services.AddSingleton<RabbitMqService>();
+
 
 var app = builder.Build();
 

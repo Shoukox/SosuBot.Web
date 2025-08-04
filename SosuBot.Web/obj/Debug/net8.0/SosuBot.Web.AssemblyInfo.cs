@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SosuBot.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e160c50169aa03addaa5e2df9f90e2e33187a76e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11d930f6e35419f0b2870e1f2cde0908c67f30e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("SosuBot.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SosuBot.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
