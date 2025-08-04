@@ -16,14 +16,23 @@ public class FileController (
     public async Task<IActionResult> PostVideo(IFormFile file, string message)
     {
         if (file.Length == 0)
+        {
+            logger.LogWarning("file.Length is 0");
             return BadRequest("No file provided or file is empty");
+        }
 
         if (!file.ContentType.StartsWith("video/"))
+        {
+            logger.LogWarning("Invalid file type");
             return BadRequest("Invalid file type. Only video files are allowed.");
+        }
 
         var fileName = Path.GetFileName(file.FileName);
         if (string.IsNullOrEmpty(fileName))
+        {
+            logger.LogWarning("Invalid filename");
             return BadRequest("Invalid filename");
+        }
 
         if (!rabbitMqService.JobMessageExists(message))
         {
@@ -46,7 +55,7 @@ public class FileController (
         }
         catch (Exception ex)
         {
-            logger.LogError(ex, "Error saving video file for Job {JobId}", message);
+            logger.LogError(ex, "Error saving video file for render job {job}", message);
             return StatusCode(500, "Error saving file");
         }
     }
